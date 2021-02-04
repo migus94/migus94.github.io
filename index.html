@@ -2,26 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
     <title>Personal Web</title> 
     <link rel="stylesheet" 
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
-    crossorigin="anonymous">
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
-    <!-- creamos una barra de navegación con findo oscuro-->
-    <nav class="navbar navbar-dark bg-dark">
+    <!-- creamos una barra de navegación con findo oscuro.
+    navbar-expand-lg sirve para que el menu se compacte en mobil-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <!-- ponemos titulo a la barra de navegación-->
-        <a class="nabar-brand" href="#">migu94</a>
+        <a class="navbar-brand" href="#">migus94</a>
         <!-- desplegar el menu de forma responsiva-->
         <button class = "navbar-toggler" type="button"
-            data-toggle="collapse" data-target = "entrada_menu">
+            data-toggle="collapse" data-target = "#entrada_menu">
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- el id tiene que ser igual al contenido de data-target-->
         <div class="collapse navbar-collapse" id="entrada_menu">
-
+            <!-- los menus se hacen con listas-->
+            <ul class="navbar-nav">
+                <!--Cada elemnto de la lista es una entrada del menu-->
+                <li class="nav-item">
+                    <!-- El enlace con el tirulo al que lleva el menu-->
+                    <a class="nav-link" href="#" id="menu_inicio"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="menu_desarrollo_web"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="menu_desarrollo_java"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="menu_base_de_datos"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="menu_contacto"></a>
+                </li>
+            </ul>
         </div>
     </nav>
     <div class="container">

@@ -52,8 +52,8 @@ $.controller.init = function (panel_inicial) {
 /**
  * Esta funcion nos lleva al panel inical. oculta el panel activo en 
  * ese momento y muestra solo el panel inicial que se indico en 
- * $.controller.init()
+ * $.controller.index()
  */
-$.controller.init = function() {
+$.controller.index = function() {
     $.controller.activate($.controller.panel_inicial) 
 }
